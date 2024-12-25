@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../images/login_backgroud.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#wrapper {
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px white solid;
+}
+
+h1.login_title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 450;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > input {
+    height: 40px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    font-size: 18px;    
+    color: #333;
+    font-weight: normal;
+    text-align: left;
+    padding: 15px;  
+    background-color: none;       
+}
+
+div.button_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+div.button_nav button {
+    margin: 5px 0px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+div.button_nav .signInBtn {
+    background-color: #71b556;
+    color: white;
+}
+
+div.button_nav .signInBtn:hover {
+    background-color: #84ff79;
+}
+
+div.button_nav .signUpBtn {
+    background-color: #316df0;
+    color: white;
+}
+
+div.button_nav .signUpBtn:hover {
+    background-color: #4d73e5;
+}
+
+div.button_nav .backBtn {
+    display: none;
+    background-color: #333;
+    color: white;
+}
+
+div.button_nav .backBtn:hover {
+    background-color: black;
+}
+
+/* Sign up */
+div.button_nav .signInBtn.active {
+    display: none;
+}
+
+div.button_nav.active {
+    display: flex;
+    justify-content: center;
+}
+
+.signup {
+    display: none;
+}
+
+.signup.active {
+    display: block;
+}
+
+div.button_nav .backBtn.active {
+    display: block;
+}
