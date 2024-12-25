@@ -1,7 +1,7 @@
 import psycopg2
 import os
 
-SQL_host = "104.199.139.124"
+SQL_host = "x"
 __cnx = None
 
 def get_sql_connection():
@@ -9,10 +9,10 @@ def get_sql_connection():
     try:
         if not __cnx or __cnx.closed:
             __cnx = psycopg2.connect(
-                host="104.199.139.124",
-                database="gcp-group11",
-                user="postgres",
-                password="dh22hm"
+                host="x",
+                database="x",
+                user="x",
+                password="x"
             )
         return __cnx
     except Exception as e:
